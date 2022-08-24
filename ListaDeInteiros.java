@@ -1,9 +1,12 @@
 
 public class ListaDeInteiros{
+    //atributos
     private int dados[];
     private int tamanho;
 
-    public ListaDeInteiros(int capacidade){
+
+    //metodos
+    public ListaDeInteiros(int capacidade){ //metodo construtor
         dados = new int[capacidade];
         tamanho = 0;
     }
