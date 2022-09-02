@@ -10,14 +10,35 @@ public class ListaDeInteiros{
         dados = new int[capacidade];
         tamanho = 0;
     }
-    public int adicionaInicio(){
-        for(int i = tamanho -1; i>=0; i--){
-            dados[i+1]= dados[i]
+    public int removeInicio() {
+        int r = -1;
+        if (tamanho == 0){
+            System.out.println("Erro lista vazia");
+        }else{
+            r = dados[0];
+            for (int i = 1; i <= tamanho-1; i++){
+                dados[i-1]= dados[i];
+                tamanho --;
+            }
+
+        }
+        return r;
+    }
+    public void adicionaInicio(){
+        if (tamanho == dados.length){
+            System.out.println("Lista cheia");
+        }else{
+            for(int i = tamanho -1; i>=0; i--){
+                dados[i+1]= dados[i]
+                dados[0]=e;
+                tamanho ++;
+            }
         }
     }
+
     public int removeFinal(){
         int r  = Integer.MIN_VALUE;
-        if (tamanho = 0){
+        if (tamanho == 0){
             System.out.println("ERRO: lista vazia");
         }else{
             r = dados[tamanho-1];
@@ -32,6 +53,7 @@ public class ListaDeInteiros{
     //     }
     //     return dados[--tamanho];
     // }
+
     public void adicionaFinal(int e){
         if (tamanho == dados.length){
             System.out.println("Lista cheia");
