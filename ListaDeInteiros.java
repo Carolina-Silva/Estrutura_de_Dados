@@ -35,7 +35,6 @@ public class ListaDeInteiros{
             }
         }
     }
-
     public int removeFinal(){
         int r  = Integer.MIN_VALUE;
         if (tamanho == 0){
@@ -53,7 +52,6 @@ public class ListaDeInteiros{
     //     }
     //     return dados[--tamanho];
     // }
-
     public void adicionaFinal(int e){
         if (tamanho == dados.length){
             System.out.println("Lista cheia");
@@ -61,6 +59,9 @@ public class ListaDeInteiros{
             dados[tamanho++] = e;
         }
     }
+    
+
+
     public String toString(){
         String r = "";
         for(int i =0; i < tamanho; i ++){
