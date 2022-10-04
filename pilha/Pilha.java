@@ -28,7 +28,6 @@ public class Pilha {
     //         dados[topo] = e;
     //         topo ++;
     //     }
-
     // }
 
     // public int desempilha(){

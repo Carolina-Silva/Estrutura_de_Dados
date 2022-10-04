@@ -24,7 +24,7 @@ public class ListaDeInteiros{
         }
         return r;
     }
-    public void adicionaInicio(){
+    public void adicionaInicio(int e){
         if (tamanho == dados.length){
             System.out.println("Lista cheia");
         }else{
@@ -59,8 +59,6 @@ public class ListaDeInteiros{
             dados[tamanho++] = e;
         }
     }
-    
-
 
     public String toString(){
         String r = "";
