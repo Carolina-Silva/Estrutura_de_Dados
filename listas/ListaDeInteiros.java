@@ -29,7 +29,7 @@ public class ListaDeInteiros{
             System.out.println("Lista cheia");
         }else{
             for(int i = tamanho -1; i>=0; i--){
-                dados[i+1]= dados[i]
+                dados[i+1]= dados[i];
                 dados[0]=e;
                 tamanho ++;
             }
