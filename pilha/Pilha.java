@@ -39,11 +39,11 @@ public class Pilha {
     //     return r;
     // }
 
-    public String toString(){
-        String r = "";
-        for(int i =0; i < topo; i ++){
-            r = r + dados[i] + "\t";
-            return r;
-        }
-    }
+    // public String toString(){
+    //     String r = "";
+    //     for(int i =0; i < topo; i ++){
+    //         r = r + dados[i] + "\t";
+    //         return r;
+    //     }
+    // }
 }
