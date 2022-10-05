@@ -42,6 +42,27 @@ public class ListaLigada {
         }
     }
 
+
+    public int removeFinal(){
+        int r = -1;
+        if (inicio == null) {
+            System.out.println("ERRO: Lista vazia");
+        }else if(inicio.prox != null){
+            No aux1 = inicio;
+            No aux2 = null;
+            while(aux1.prox != null){
+                aux2 = aux1;
+                aux1 = aux1.prox;
+            }
+            r = aux1.dado;
+            aux2.prox = null;
+        }else{
+            r = inicio.dado;
+            inicio = null;
+        }
+        return r;
+    }
+
     public String toString() {
         //criar um nó auxiliar para percorrer a lista
         No aux = inicio;

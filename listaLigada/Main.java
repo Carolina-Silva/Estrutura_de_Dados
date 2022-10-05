@@ -7,14 +7,26 @@ public class Main{
         lista.adicionaInicio(30); //30 - 20 - 10
 
 
-        System.out.print(lista.toString()+ "\n");
+         System.out.print("Estado Atual: " + lista.toString()+ "\n");
 
         System.out.println("rodando remove inicio");
-
         int x = lista.removeInicio();
 
-        System.out.print(lista.toString());
-        System.out.printf("\nItem removido = %d", x);
+        System.out.printf("\nItem removido = %d\n", x);
+        
+        System.out.print("Estado Atual: " + lista.toString()+ "\n");
+        
+        System.out.println("rodando adiciona Final");
+        lista.adicionaFinal(2);
+        
+        System.out.print("Estado Atual: " + lista.toString()+ "\n");
+        
+        System.out.println("rodando remove final");
+
+         x = lista.removeFinal();
+        System.out.printf("\nItem removido = %d\n", x);
+        
+        System.out.print("Estado Atual: " + lista.toString()+ "\n");
 
     }
 }
