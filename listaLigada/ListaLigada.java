@@ -29,6 +29,19 @@ public class ListaLigada {
         return r;
     }
 
+    public void adicionaFinal(int e){
+        No novo = new No(e);
+        if (inicio == null){
+            inicio = novo;
+        }else{
+            No aux = inicio;
+            while(aux.prox != null){
+                aux = aux.prox;
+            }
+            aux.prox = novo;
+        }
+    }
+
     public String toString() {
         //criar um nó auxiliar para percorrer a lista
         No aux = inicio;
