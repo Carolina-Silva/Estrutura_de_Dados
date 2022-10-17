@@ -1,5 +1,3 @@
-package ListaDeAlunos;
-
 public class Aluno {
     private String nome, ra;
 
@@ -29,7 +27,7 @@ public class Aluno {
     @Override
     public String toString() {
         String r = "";
-        r = "Aluno: " + nome + "\nRA: " + ra;
+        r = "Aluno: " + nome + "\tRA: " + ra + "\n";
         
         return r;
     } 

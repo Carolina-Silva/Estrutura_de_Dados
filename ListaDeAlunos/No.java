@@ -1,5 +1,3 @@
-package ListaDeAlunos;
-
 public class No {
     // [inicio]null] -> Esse é o nó
     public Aluno dado;

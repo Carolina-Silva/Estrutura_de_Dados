@@ -1,5 +1,3 @@
-package ListaDeAlunos;
-
 public class ListaLigadaAluno {
     private No inicio;
 
