@@ -1,5 +1,11 @@
+package ListaDeAlunos;
+
 public class Aluno {
     private String nome, ra;
+
+    Aluno(){
+
+    }
 
     public Aluno(String nome, String ra){
         this.nome = nome;
@@ -23,9 +29,9 @@ public class Aluno {
     @Override
     public String toString() {
         String r = "";
-        r = "Aluno: " + nome + "RA: " + ra;
+        r = "Aluno: " + nome + "\nRA: " + ra;
         
         return r;
-    }    
-
+    } 
+    
 }
