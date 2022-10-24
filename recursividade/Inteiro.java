@@ -38,4 +38,11 @@ public class Inteiro {
         }
         return fibonacci(n-1) + fibonacci(n-2);
     }
+
+    public int mdc(int m, int n){
+        int r = m % n ;
+        if(r == 0)
+            return n;
+        return mdc(n,r);
+    }
 }
