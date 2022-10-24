@@ -16,7 +16,7 @@ public class Main
 
             // -------------------------------------------------max divisor comum
             int md = i1.mdc(250,150);
-            System.out.printf("\no MVC é: " + md);
+            System.out.printf("\no MDC é: " + md);
 
         }
 
