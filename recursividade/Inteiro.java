@@ -39,6 +39,18 @@ public class Inteiro {
         return fibonacci(n-1) + fibonacci(n-2);
     }
 
+    // fibonat vet
+    public void fibonacciVet(int vet[], int n){
+        if(n == 1){
+            vet[n-1] = 1;
+        }else if(n == 2){
+            vet[n-1] = 1;
+        }else{
+            fibonacciVet(vet, n-1);// recurcividade
+            vet[n-1] = vet[n-2] + vet[n-3];
+        }
+    }
+
     public int mdc(int m, int n){
         int r = m % n ;
         if(r == 0)
