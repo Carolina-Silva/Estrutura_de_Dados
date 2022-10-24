@@ -15,7 +15,7 @@ public class Main
         
 
             // fibo com memoria--------------------------------------------------------
-            int vet = new int[n];
+            int vet[] = new int[n];
 
             int fbm = i1.fibonacciVet(vet, n);
 
