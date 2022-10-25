@@ -1,0 +1,47 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/aluno/Documents/NetBeansProjects/listas/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/aluno/Documents/NetBeansProjects/listas/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'listas 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/aluno/Documents/NetBeansProjects/listas/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'listas 1.0-SNAPSHOT API'
+com.mycompany.listas.model
+com.mycompany.listas.view
+'C:/Users/aluno/Documents/NetBeansProjects/listas/src/main/java/com/mycompany/listas/model/ListaLigada.java'
+'C:/Users/aluno/Documents/NetBeansProjects/listas/src/main/java/com/mycompany/listas/model/Listas.java'
+'C:/Users/aluno/Documents/NetBeansProjects/listas/src/main/java/com/mycompany/listas/model/No.java'
+'C:/Users/aluno/Documents/NetBeansProjects/listas/src/main/java/com/mycompany/listas/view/Main.java'
+C:\Users\aluno\Documents\NetBeansProjects\listas\src\main\java = 1666696743352
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\allclasses-frame.html = 1666699843660
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\allclasses-noframe.html = 1666699843676
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\constant-values.html = 1666699843613
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\deprecated-list.html = 1666699843660
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\help-doc.html = 1666699843676
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\index-all.html = 1666699843660
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\index.html = 1666699843676
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\overview-frame.html = 1666699843581
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\overview-summary.html = 1666699843676
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\overview-tree.html = 1666699843660
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\package-list = 1666699843565
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\script.js = 1666699843676
+C:\Users\aluno\Documents\NetBeansProjects\listas\target\site\apidocs\stylesheet.css = 1666698754761

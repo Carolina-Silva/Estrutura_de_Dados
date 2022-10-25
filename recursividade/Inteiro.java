@@ -44,6 +44,7 @@ public class Inteiro {
         if(n == 1){
             vet[n-1] = 1;
         }else if(n == 2){
+            fibonacciVet(vet, n-1);
             vet[n-1] = 1;
         }else{
             fibonacciVet(vet, n-1);// recurcividade
