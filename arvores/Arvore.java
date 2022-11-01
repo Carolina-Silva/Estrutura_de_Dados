@@ -7,6 +7,15 @@ public class Arvore {
     }
 
     // add elemento
+    public void addElemento(int e){
+        No novo = new No(e);
+        if (raiz == null){
+            raiz = novo;
+        }else{
+            No aux1 = raiz, aux2 = raiz;
+            while (aux1 )
+        }
+    }
 
 
     // mostrar elementos
