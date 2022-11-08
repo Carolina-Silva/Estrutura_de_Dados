@@ -68,6 +68,14 @@ public class Arvore {
         }
     }
 
+    //remover nó folha
+    
+
+    //remover nó com 1 filho
+
+
+    //remover nó com 2 filho
+
 
 
     // mostrar elementos pre ordem
