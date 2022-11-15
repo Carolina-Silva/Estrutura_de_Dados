@@ -112,5 +112,124 @@ public class Arvore {
         return 0;
     }
 
+
+    //metodos atv andreia---------------------------------------------------------------------
+
+     public void metodoA(int e){ 
+       No novo = new No(e); 
+        if (raiz == null) 
+            raiz = novo; 
+        else{ 
+            No aux2=metodoB(raiz, raiz, e);
+            if (e == aux2.elemento) 
+                System.out.println("Elemento já existe"); 
+            else{ if (e < aux2.elemento)   
+               aux2.esquerda = novo; 
+           if (e > aux2.elemento)   
+                aux2.direita = novo; 
+            } 
+        }
+    }
+    public No metodoB(No aux1, No aux2, int e){
+   if (aux1 != null && e != aux2.elemento){ 
+      aux2=aux1; 
+      if (e>aux1.elemento) 
+        return metodoB(aux1.direita, aux2, e); 
+      if (e<aux1.elemento)
+        return metodoB(aux1.esquerda, aux2, e);
+    }
+   return aux2;
+    }
+
+
+//------------------------------------------------------------------------
+ public void metodoC(String e){ 
+        No novo = new No(e); 
+        if (raiz == null) 
+            raiz = novo; 
+        else{ 
+            No aux2=metodoD(raiz, raiz, e);
+            if (e == aux2.elemento) 
+                aux2.ocorrencias++;
+            else{ if (e.compareTo(aux2.elemento)<0)   
+                aux2.esquerda = novo; 
+            if (e.compareTo(aux2.elemento)>0)   
+                aux2.direita = novo; 
+            }
+        }
+    }
+        public No metodoD(No aux1, No aux2, String e){
+            if (aux1 != null && !e.equals(aux2.elemento)){ 
+                aux2=aux1; 
+                if (e.compareTo(aux2.elemento)<0) 
+                   return metodoD(aux1.esquerda, aux2, e);
+                else if (e.compareTo(aux2.elemento)>0) 
+                   return metodoD(aux1.direita, aux2, e); 
+            }
+            return aux2;
+        }
+        
+        public void mostra(No n, int o){
+            if (n != null && o <= n.ocorrencias){
+                System.out.println(" "+n.elemento);
+                mostra(n,o+1);
+            }
+        }
+//------------------------------------------------------------------------
+
+    public void metodoA(int e){ 
+       No novo = new No(e); 
+        if (raiz == null) 
+            raiz = novo; 
+        else{ 
+            No aux2=metodoB(raiz, raiz, e);
+            if (e == aux2.elemento) 
+                System.out.println("Elemento já existe"); 
+            else{ if (e < aux2.elemento)   
+               aux2.esquerda = novo; 
+           if (e > aux2.elemento)   
+                aux2.direita = novo; 
+            } 
+        }
+    }
+ public No metodoB(No aux1, No aux2, int e){
+   if (aux1 != null && e != aux2.elemento){
+      aux2=aux1;
+      if (e>aux1.elemento)
+        return metodoB(aux1.direita, aux2, e);
+      if (e<aux1.elemento)
+        return metodoB(aux1.esquerda, aux2, e);
+    }
+   return aux2;
+ }
+
+//------------------------------------------------------------------------
+
+public void metodoA(int e){ 
+        No novo = new No(e); 
+        if (raiz == null) 
+            raiz = novo; 
+        else{ 
+            No aux2=metodoB(raiz, raiz, e);
+            if (e == aux2.elemento) 
+                System.out.println("Elemento já existe"); 
+            else{ if (e < aux2.elemento)   
+                aux2.esquerda = novo; 
+            if (e > aux2.elemento)   
+                aux2.direita = novo; 
+            } 
+        }
+    }
+    public No metodoB(No aux1, No aux2, int e){
+        if (aux1 != null && e != aux2.elemento){ 
+            aux2=aux1; 
+            if (e<aux1.elemento) 
+                return metodoB(aux1.esquerda, aux2, e);
+            else if (e>aux1.elemento) 
+                return metodoB(aux1.direita, aux2, e); 
+        }
+        return aux2;
+    }
+
     //
 }
