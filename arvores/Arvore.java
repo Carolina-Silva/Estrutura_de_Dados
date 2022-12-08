@@ -19,13 +19,13 @@ public class Arvore {
             No aux1 = raiz, aux2 = raiz;
             while (aux1 != null){
                 aux2 = aux1;
-                if (e < aux1.elemento){
+                if (e < aux1.elemento){ (e.compareTo(aux2.elemento)<0) 
                     aux1 = aux1.esquerda;
                 } else if(e > aux1.elemento){
                     aux1 = aux1.direita;
                 }
             }
-            if (e == aux2.elemento){
+            if (e == aux2.elemento){e.equals(aux2.elemento)
                 System.out.println("Elemento já existe");
             }else{
                 if( e < aux2.elemento){
@@ -48,7 +48,7 @@ public class Arvore {
             No aux1 = raiz, aux2 = raiz;
             while (aux1 != null){
                 aux2 = aux1;
-                if (e < aux1.elemento){
+                if (e < aux1.elemento){ (e.compareTo(aux.elemento)<0)
                     aux1 = aux1.direita;
                 } else if(e > aux1.elemento){
                     aux1 = aux1.esquerda;
@@ -151,7 +151,8 @@ public class Arvore {
             No aux2=metodoD(raiz, raiz, e);
             if (e == aux2.elemento) 
                 aux2.ocorrencias++;
-            else{ if (e.compareTo(aux2.elemento)<0)   
+            else{ 
+                if (e.compareTo(aux2.elemento)<0)   
                 aux2.esquerda = novo; 
             if (e.compareTo(aux2.elemento)>0)   
                 aux2.direita = novo; 

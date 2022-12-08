@@ -14,6 +14,16 @@ public class Inteiro {
         }
         return fatorialR(n - 1) * n;
     }
+//     int fat = 1;
+// int valor = 5; //ou qualquer outro valor que queira calcular;
+
+// for( int i = 2; i <= valor; i++ )
+// {
+// fat *= i;
+// }
+
+// System.out.println( "O fatorial de " + valor + " é igual a " + fat );
+// }
 
     public int somatoriaR(int n) {
         if(n>1){
