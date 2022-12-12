@@ -70,7 +70,7 @@ class Grafo:
                 menor = i
                 menorDist = dist[i]
                 
-        return menor;
+        return menor
         
     def menorCaminho(self, ini):
         cont = gr.__nro_vertices

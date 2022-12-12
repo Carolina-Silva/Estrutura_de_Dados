@@ -4,6 +4,7 @@ class Grafo:
         self.vertices = vertices
         self.grafo = [[] for i in range(self.vertices)]
 
+   
     def add_aresta(self, u, v):
         self.grafo[u-1].append(v) #add a aresta que vai de u para v
         self.grafo[v-1].append(u) 
