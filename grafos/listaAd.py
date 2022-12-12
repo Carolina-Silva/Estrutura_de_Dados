@@ -1,4 +1,4 @@
-#exemplo feito pensando em grafo direcionado não valorado
+#exemplo feito pensando em grafo não valorado
 class Grafo:
     def __init__ (self, vertices):
         self.vertices = vertices
@@ -6,6 +6,7 @@ class Grafo:
 
     def add_aresta(self, u, v):
         self.grafo[u-1].append(v) #add a aresta que vai de u para v
+        self.grafo[v-1].append(u) 
         
     def mostrar_lista(self):
         for i in range(self.vertices):
